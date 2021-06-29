@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig",
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "app/**/*.ts"
+    ],
+    "exclude": [
+        "app/test.ts",
+        "app/**/*.spec.ts"
+    ]
+}

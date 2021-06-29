@@ -1,8 +1,17 @@
 {
-  "name": "NativescriptTemplate",
+  "name": "nativescript-template",
   "main": "main.js",
   "license": "SEE LICENSE IN <your-license-filename>",
   "version": "0.0.0",
+  "nativescript": {
+    "id": "org.nativescript.nativescripttemplate",
+    "tns-ios": {
+      "version": "6.5.4"
+    },
+    "tns-android": {
+      "version": "6.5.3"
+    }
+  },
   "dependencies": {
     "@angular/animations": "~11.0.0",
     "@angular/common": "~11.0.0",
@@ -21,12 +30,16 @@
     "zone.js": "~0.11.1"
   },
   "devDependencies": {
+    "@angular-devkit/core": "~11.0.0",
     "@angular/cli": "~11.0.0",
     "@angular/compiler-cli": "~11.0.0",
-    "@angular-devkit/core": "~11.0.0",
+    "@nativescript/schematics": "^10.1.0",
     "@nativescript/webpack": "~3.0.0",
     "@ngtools/webpack": "~11.0.0",
-    "typescript": "~4.0.0",
-    "node-sass": "^4.7.1"
+    "@types/jest": "^26.0.23",
+    "nativescript-dev-webpack": "1.0.1",
+    "node-sass": "^4.7.1",
+    "tslint": "^6.1.3",
+    "typescript": "~4.0.0"
   }
 }

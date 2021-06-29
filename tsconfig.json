@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "baseUrl": ".",
+    "module": "esnext",
     "target": "es2017",
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -12,7 +13,13 @@
       "es2017",
       "dom",
       "es6"
-    ]
+    ],
+    "paths": {
+        "@core/*": ["app/core/*"],
+        "@layouts/*": ["app/layouts/*"],
+        "@shared/*": ["./app/shared/*"],
+        "@modules/*": ["./app/modules/*"]
+    }
   },
   "exclude": [
     "node_modules",

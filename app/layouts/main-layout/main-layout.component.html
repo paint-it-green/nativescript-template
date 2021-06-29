@@ -1,0 +1,26 @@
+<GridLayout rows="*,auto" columns="*,*,*">
+
+    <ScrollableView row="0" col="0" colSpan="3">
+        <ng-content></ng-content>   
+    </ScrollableView>
+
+    <Button row="1" col="0" textWrap="true"
+    (tap)="navigate(['/accounts'])">
+        <FormattedString>
+            <Span text="Accounts"></Span>
+        </FormattedString>
+    </Button>
+    <Button row="1" col="1" textWrap="true"
+    (tap)="navigate(['/fund-transfer'])">
+        <FormattedString>
+            <Span text="Fund transfer"></Span>
+        </FormattedString>
+    </Button>
+    <Button row="1" col="2" textWrap="true"
+    (tap)="navigate(['/settings'])">
+        <FormattedString>
+            <Span text="Settings"></Span>
+        </FormattedString>
+    </Button>
+
+</GridLayout>
